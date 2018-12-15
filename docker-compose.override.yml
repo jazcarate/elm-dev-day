@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  backend:
+    build: backend
+    volumes:
+      - ./backend/src:/app/src
+    ports:
+      - "56541:56541"
+
+  frontend:
+    build:
+      context: frontend
+      target: builder
+    volumes:
+      - ./frontend/src:/app/src
+    ports:
+      - "56542:56542"
+    command: npm run start

@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend para el taller de Elm",
+  "main": "src/index.js",
+  "author": "Florius <j@florius.com.ar>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "PORT=56542 elm-app start",
+    "build": "elm-app build",
+    "tdd": "elm-app test --watch",
+    "test": "elm-app test",
+    "lint": "elm-format src/ tests/ --yes"
+  },
+  "dependencies": {
+    "create-elm-app": "^2.2.3"
+  }
+}

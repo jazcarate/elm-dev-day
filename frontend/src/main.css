@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+
+body {
+  font-family: 'EB Garamond', serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #293c4b;
+}
+
+.wrapper {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  background: whitesmoke;
+  box-shadow: 0 0 10px black;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.winner {
+  font-family: 'Cardo', serif;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+
+.winner::before, .winner::after {
+  content: "§";
+  display: inline-block;
+  transform: rotate(90deg);
+	opacity: 0.2;
+  margin: 0 0.6em;
+  font-size: 0.5em;
+}
+
+h2 {
+  letter-spacing: 30px
+}
+
+.intentos {
+  font-size: 20px;
+  text-align: left;
+}
+
+.intento {
+  margin: 0.5em;
+}
+
+button {
+	background: rgba(255,105,30,1);
+  background: linear-gradient(rgba(255,105,30,1) 0%, rgba(230,95,28,1) 100%);
+  padding: 4px 12px;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  display: inline-block;
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.21);
+  border-bottom: 4px solid rgba(0,0,0,0.21);
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(228, 160, 160, 0.15);
+}
+
+button:active {background: #E8601B;}
